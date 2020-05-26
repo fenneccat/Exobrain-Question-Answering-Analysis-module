@@ -28,12 +28,12 @@ It updates train, text triviaQA data with additional information.
 		2. explicit quotes are changed to special token 'QUOTES'
 		3. list of the original forms of quotes which is replaced as 'QUOTES'
 
-# Run file
+### Run file
 
 ```
 python query_analysis_v02.py
 ```
-# Requirement
+### Requirement
 * SPACY (https://spacy.io/)
 * NLTK
 * tqdm
@@ -44,7 +44,7 @@ python query_analysis_v02.py
 Measuring similarity between answer type of given answer type and answer candidates.
 Fine Grained Entity Typing model is used for get a type of answer (https://github.com/uwnlp/open_type)
 
-# Run file
+### Run file
 ```
 python get_LAT_feature.py release_model -lstm_type single -enhanced_mention -data_setup joint -add_crowd -multitask -mode test -reload_model_name release_model -eval_data crowd/test3.json -load
 ```
